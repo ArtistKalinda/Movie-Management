@@ -1,0 +1,96 @@
+<app-sidebar></app-sidebar>
+
+<div class="main-content">
+
+  <app-navbar></app-navbar>
+
+  <div class="form-container">
+
+    <div class="form-card">
+
+      <div class="form-header">
+
+        <h2>🎬 Add New Movie</h2>
+
+        <p>
+          Fill movie details below
+        </p>
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Movie Name</label>
+
+        <input
+          type="text"
+          [(ngModel)]="movie.movieName">
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Director</label>
+
+        <input
+          type="text"
+          [(ngModel)]="movie.director">
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Producer</label>
+
+        <input
+          type="text"
+          [(ngModel)]="movie.producer">
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Rating</label>
+
+        <input
+          type="number"
+          step="0.1"
+          [(ngModel)]="movie.rating">
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Movie Poster</label>
+
+        <input
+          type="file"
+          accept="image/*"
+          (change)="onFileSelected($event)">
+
+      </div>
+
+      <div
+        class="preview-box"
+        *ngIf="previewUrl">
+
+        <img
+          [src]="previewUrl"
+          alt="Movie Poster Preview">
+
+      </div>
+    
+
+      <button
+        class="save-btn"
+        (click)="saveMovie()">
+
+        💾 Save Movie
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>

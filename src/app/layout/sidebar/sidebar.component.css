@@ -1,0 +1,98 @@
+.sidebar{
+
+  position:fixed;
+
+  left:0;
+
+  top:0;
+
+  width:260px;
+
+  height:100vh;
+
+  background:
+  linear-gradient(
+  180deg,
+  #0f172a,
+  #020617);
+
+  color:white;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:space-between;
+
+  padding:25px 20px;
+
+  box-shadow:
+  5px 0 30px rgba(0,0,0,.4);
+}
+
+.logo-section h2{
+
+  margin:0;
+
+  font-size:30px;
+
+  color:#8b5cf6;
+}
+
+.logo-section span{
+
+  color:#94a3b8;
+
+  font-size:14px;
+}
+
+.menu{
+
+  margin-top:40px;
+}
+
+.menu a{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  text-decoration:none;
+
+  color:white;
+
+  padding:14px 18px;
+
+  margin-bottom:12px;
+
+  border-radius:12px;
+
+  transition:.3s;
+}
+
+.menu a:hover{
+
+  background:
+  linear-gradient(
+  135deg,
+  #7c3aed,
+  #2563eb);
+
+  transform:translateX(5px);
+}
+
+.sidebar-footer{
+
+  background:
+  rgba(255,255,255,.05);
+
+  padding:20px;
+
+  border-radius:15px;
+
+  text-align:center;
+
+  color:#cbd5e1;
+}

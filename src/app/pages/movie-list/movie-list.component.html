@@ -1,0 +1,123 @@
+<app-sidebar></app-sidebar>
+
+<div class="main-content">
+
+  <app-navbar></app-navbar>
+
+  <div class="movie-container">
+
+    <div class="page-header">
+
+      <div>
+
+        <h2>🎬 Movie Collection</h2>
+
+        <p>Manage all your movies from one place</p>
+
+      </div>
+
+      <a
+        routerLink="/add-movie"
+        class="add-btn">
+
+        + Add Movie
+
+      </a>
+
+    </div>
+
+    <div class="search-box">
+
+      <input
+        type="text"
+        placeholder="🔍 Search Movies..."
+        [(ngModel)]="searchText"
+        (input)="searchMovie()">
+
+    </div>
+
+    <div
+      *ngIf="isLoading"
+      class="loading">
+
+      Loading Movies...
+
+    </div>
+
+    <div class="movie-grid">
+
+      <div
+        class="movie-card"
+        *ngFor="let movie of movies">
+
+        <img
+
+          [src]="movie.posterUrl
+          ? 'https://localhost:7183' + movie.posterUrl
+          : 'assets/no-image.png'"
+
+          class="poster">
+
+        <div class="movie-content">
+
+          <div class="title-row">
+
+            <h3>{{movie.movieName}}</h3>
+
+            <span class="rating">
+
+              ⭐ {{movie.rating}}
+
+            </span>
+
+          </div>
+
+          <p>
+
+            <strong>Director</strong><br>
+
+            {{movie.director}}
+
+          </p>
+
+          <p>
+
+            <strong>Producer</strong><br>
+
+            {{movie.producer}}
+
+          </p>
+
+          <div class="buttons">
+
+            <a
+
+              [routerLink]="['/edit-movie',movie.id]"
+
+              class="edit-btn">
+
+              ✏ Edit
+
+            </a>
+
+            <button
+
+              class="delete-btn"
+
+              (click)="deleteMovie(movie.id)">
+
+              🗑 Delete
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,197 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.login-container{
+
+  height:100vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #0f172a,
+    #111827,
+    #1e1b4b
+  );
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.background-overlay{
+
+  position:absolute;
+
+  width:100%;
+
+  height:100%;
+
+  background:
+  radial-gradient(
+    circle at top left,
+    rgba(124,58,237,.4),
+    transparent 40%
+  );
+
+}
+
+.login-card{
+
+  width:420px;
+
+  padding:40px;
+
+  background:
+  rgba(17,24,39,.85);
+
+  backdrop-filter:blur(12px);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:24px;
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.5);
+
+  z-index:10;
+
+  color:white;
+}
+
+.logo-section{
+
+  text-align:center;
+
+  margin-bottom:25px;
+}
+
+.logo-icon{
+
+  font-size:50px;
+
+  margin-bottom:10px;
+}
+
+.logo-section h1{
+
+  font-size:34px;
+
+  font-weight:700;
+
+  margin-bottom:5px;
+
+  color:#8b5cf6;
+}
+
+.logo-section p{
+
+  color:#94a3b8;
+
+  font-size:14px;
+}
+
+.login-title{
+
+  text-align:center;
+
+  margin-bottom:25px;
+
+  font-weight:600;
+}
+
+.input-group-custom{
+
+  margin-bottom:20px;
+}
+
+.input-group-custom label{
+
+  display:block;
+
+  margin-bottom:8px;
+
+  color:#cbd5e1;
+}
+
+.input-group-custom input{
+
+  width:100%;
+
+  padding:14px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#1e293b;
+
+  color:white;
+
+  outline:none;
+
+  transition:.3s;
+}
+
+.input-group-custom input:focus{
+
+  border:1px solid #8b5cf6;
+
+  box-shadow:
+  0 0 15px rgba(139,92,246,.5);
+}
+
+.login-btn{
+
+  width:100%;
+
+  padding:14px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:
+  linear-gradient(
+    90deg,
+    #7c3aed,
+    #2563eb
+  );
+
+  color:white;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.login-btn:hover{
+
+  transform:translateY(-2px);
+
+  box-shadow:
+  0 10px 25px rgba(124,58,237,.4);
+}
+
+.footer-text{
+
+  text-align:center;
+
+  margin-top:20px;
+
+  color:#94a3b8;
+
+  font-size:13px;
+}

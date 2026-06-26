@@ -1,0 +1,73 @@
+<app-sidebar></app-sidebar>
+
+<div class="main-content">
+
+  <app-navbar></app-navbar>
+
+  <div class="form-container">
+
+    <div class="form-card">
+
+      <div class="form-header">
+
+        <h2>✏️ Edit Movie</h2>
+
+        <p>
+          Update movie details
+        </p>
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Movie Name</label>
+
+        <input
+          type="text"
+          [(ngModel)]="movie.movieName">
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Director</label>
+
+        <input
+          type="text"
+          [(ngModel)]="movie.director">
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Producer</label>
+
+        <input
+          type="text"
+          [(ngModel)]="movie.producer">
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Rating</label>
+
+        <input
+          type="number"
+          [(ngModel)]="movie.rating">
+
+      </div>
+
+      <button
+        class="update-btn"
+        (click)="updateMovie()">
+
+        Update Movie
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>

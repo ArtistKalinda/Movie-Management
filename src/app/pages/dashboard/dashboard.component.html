@@ -1,0 +1,117 @@
+<app-sidebar></app-sidebar>
+
+<div class="main-content">
+
+  <app-navbar></app-navbar>
+
+  <div class="dashboard-container">
+
+    <!-- Welcome Banner -->
+
+    <div class="welcome-banner">
+
+      <div>
+
+        <h2>Welcome Back Admin 👋</h2>
+
+        <p>
+          Manage your movie collection efficiently
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- Stats Cards -->
+
+    <div class="stats-grid">
+
+      <div class="stat-card purple">
+
+        <h1>{{totalMovies}}</h1>
+
+        <p>Total Movies</p>
+
+      </div>
+
+      <div class="stat-card blue">
+
+        <h1>{{totalDirectors}}</h1>
+
+        <p>Directors</p>
+
+      </div>
+
+      <div class="stat-card orange">
+
+        <h1>{{totalProducers}}</h1>
+
+        <p>Producers</p>
+
+      </div>
+
+      <div class="stat-card pink">
+
+        <h1>{{averageRating}}</h1>
+
+        <p>Average Rating</p>
+
+      </div>
+
+    </div>
+
+    <!-- Second Row -->
+
+    <div class="row-grid">
+
+      <div class="glass-card">
+
+        <h4>Movie Growth</h4>
+
+      </div>
+
+      <div class="glass-card">
+
+        <h4>Recent Activity</h4>
+
+      </div>
+
+    </div>
+
+    <!-- Third Row -->
+
+    <div class="row-grid">
+
+      <div class="glass-card">
+
+        <h4>Genre Distribution</h4>
+
+      </div>
+
+      <div class="glass-card">
+
+        <h4>Recent Movies</h4>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="chart-section">
+
+  <div class="glass-card">
+
+    <h4>Genre Distribution</h4>
+
+    <canvas
+      baseChart
+      [data]="pieChartData"
+      [type]="pieChartType"
+      [options]="pieChartOptions">
+    </canvas>
+
+  </div>
+
+</div>

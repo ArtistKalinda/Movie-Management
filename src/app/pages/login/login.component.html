@@ -1,0 +1,61 @@
+<div class="login-container">
+
+  <div class="background-overlay"></div>
+
+  <div class="login-card">
+
+    <div class="logo-section">
+
+      <div class="logo-icon">
+        🎬
+      </div>
+
+      <h1>MovieHub</h1>
+
+      <p>Movie Management System</p>
+
+    </div>
+
+    <h3 class="login-title">
+      Admin Login
+    </h3>
+
+    <div class="input-group-custom">
+
+      <label>Username</label>
+
+      <input
+        type="text"
+        placeholder="Enter Username"
+        [(ngModel)]="loginData.username">
+
+    </div>
+
+    <div class="input-group-custom">
+
+      <label>Password</label>
+
+      <input
+        type="password"
+        placeholder="Enter Password"
+        [(ngModel)]="loginData.password">
+
+    </div>
+
+    <button
+      class="login-btn"
+      (click)="login()">
+
+      Login
+
+    </button>
+
+    <div class="footer-text">
+
+      Secure Admin Access 🔐
+
+    </div>
+
+  </div>
+
+</div>
