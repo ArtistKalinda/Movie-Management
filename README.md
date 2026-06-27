@@ -1,27 +1,174 @@
-# MovieManagement
+# 🎬 Movie Management System - Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+A modern Movie Management System built using **Angular 18** with JWT Authentication, Dashboard Analytics, CRUD Operations and Responsive UI.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 Project Overview
 
-## Code scaffolding
+This project is the frontend of the **Movie Management System**.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+It allows administrators to securely manage movie records through a modern dashboard interface.
 
-## Build
+The application communicates with an ASP.NET Core Web API using JWT Authentication.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+# ✨ Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* 🔐 Admin Login using JWT Authentication
+* 📊 Dashboard with Live Statistics
+* 🎬 Add New Movie
+* ✏️ Update Existing Movie
+* 🗑 Delete Movie with Confirmation
+* 🔍 Search Movies
+* ⭐ Movie Rating
+* 🖼 Movie Poster Support
+* 🎨 Responsive Modern UI
+* 🚀 SweetAlert2 Notifications
+* 🔒 Route Protection using Auth Guard
+* 🔑 HTTP Interceptor for JWT Token
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# 🛠 Tech Stack
 
-## Further help
+| Technology  | Version |
+| ----------- | ------- |
+| Angular     | 18      |
+| TypeScript  | Latest  |
+| Bootstrap   | 5       |
+| SweetAlert2 | Latest  |
+| ng2-charts  | Latest  |
+| RxJS        | Latest  |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+# 📁 Project Structure
+
+```
+src
+│
+├── app
+│   ├── components
+│   ├── layout
+│   ├── services
+│   ├── models
+│   ├── guards
+│   ├── interceptors
+│   └── pages
+│
+├── assets
+│
+└── environments
+```
+
+---
+
+# 📸 Screenshots
+
+Add screenshots inside a folder named:
+
+```
+Screenshots
+```
+
+Example
+
+```
+Screenshots
+
+login.png
+
+dashboard.png
+
+movie-list.png
+
+add-movie.png
+
+edit-movie.png
+```
+
+Then display them here.
+
+### Login
+
+![Login](Screenshots/login.png)
+
+---
+
+### Dashboard
+
+![Dashboard](Screenshots/dashboard.png)
+
+---
+
+### Movie List
+
+![Movie List](Screenshots/movie-list.png)
+
+---
+
+### Add Movie
+
+![Add Movie](Screenshots/add-movie.png)
+
+---
+
+### Edit Movie
+
+![Edit Movie](Screenshots/edit-movie.png)
+
+---
+
+# ⚙ Installation
+
+Clone Repository
+
+```bash
+git clone https://github.com/ArtistKalinda/Movie-Management.git
+```
+
+Install Packages
+
+```bash
+npm install
+```
+
+Run Project
+
+```bash
+ng serve
+```
+
+Application URL
+
+```
+http://localhost:4200
+```
+
+---
+
+# 🔗 Backend Repository
+
+ASP.NET Core Web API
+
+https://github.com/ArtistKalinda/MovieManagement.API
+
+---
+
+# 👩‍💻 Author
+
+**Kalinda Ghavit**
+
+BSc Computer Science Student
+
+GitHub
+
+https://github.com/ArtistKalinda
+
+---
+
+# ⭐ If you like this project
+
+Please give it a ⭐ on GitHub.
