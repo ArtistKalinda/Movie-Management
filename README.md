@@ -93,31 +93,31 @@ Then display them here.
 
 ### Login
 
-![Login](Screenshots/login.png)
+![Login](login.png)
 
 ---
 
 ### Dashboard
 
-![Dashboard](Screenshots/dashboard.png)
+![Dashboard](dashboard.png)
 
 ---
 
 ### Movie List
 
-![Movie List](Screenshots/movie-list.png)
+![Movie List](movie-list.png)
 
 ---
 
 ### Add Movie
 
-![Add Movie](Screenshots/add-movie.png)
+![Add Movie](add-movie.png)
 
 ---
 
 ### Edit Movie
 
-![Edit Movie](Screenshots/edit-movie.png)
+![Edit Movie](edit-movie.png)
 
 ---
 
